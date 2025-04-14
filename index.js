@@ -1,7 +1,10 @@
 import { createServer } from "node:http";
 import { WebSocketServer, WebSocket } from "ws";
 
-const server = createServer();
+const server = createServer((req, res) => {
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello World\n");
+});
 const wsLibrary = new WebSocketServer({ server });
 
 const connectedClientsArray = new Set();
