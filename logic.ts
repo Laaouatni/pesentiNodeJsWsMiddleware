@@ -1,4 +1,4 @@
-import { createServer } from "node:http";
+import { createServer } from "http";
 import { WebSocketServer, WebSocket } from "ws";
 
 export function thisLogic() {
