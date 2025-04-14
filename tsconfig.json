@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2017", // Modern ECMAScript features for Node.js (compatible with Heroku)
+    "module": "commonjs", // CommonJS module system used by Node.js
+    "lib": ["dom", "dom.iterable"], // Include standard libraries for basic DOM APIs
+    "sourceMap": true, // Generate source maps for debugging
+    "strict": true, // Enable strict TypeScript checks for type safety
+    "esModuleInterop": true, // Allow named imports from default-exported modules
+    "skipLibCheck": true, // Skip type checking for third-party library files
+    "declaration": false, // No need for declaration files for your current setup
+    "outDir": "./dist", // Compile output goes to the "dist" folder
+    "allowJs": true // Allow compilation of existing JavaScript files
+  },
+  "include": ["*.ts", "*.tsx"], // Include all TypeScript and JSX files
+  "exclude": ["node_modules", "__tests__"], // Exclude common folders
+  "watch": true // Enable automatic compilation on file changes
+}

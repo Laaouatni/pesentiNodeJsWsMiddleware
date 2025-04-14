@@ -1,0 +1,1 @@
+web: npx tsc index.ts --esModuleInterop && node index.js
